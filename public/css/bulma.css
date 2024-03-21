@@ -37,12 +37,61 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 60;
-  min-width: 500px; */
+  min-width: 500px;
   margin: 20px;
 }
 
 .reg-msg {
   margin-top: 30px;
+}
+
+.services {
+  padding: 20px;
+}
+
+.service .card {
+  min-height: 300px;
+  max-width: 300px;
+  padding-top: 10px;
+  background-color: whitesmoke;
+}
+
+.service .card-content {
+  min-height: 200px;
+  /* color:rgb(186, 195, 224); */
+}
+
+.baner {
+  margin-top: 100px;
+  height: 80%;
+  align-items: end;
+}
+
+.town {
+  margin-top: 20px;
+}
+
+.adress {
+  margin-top: 8px;
+}
+
+.my-num {
+  /* background-color: #00e7eb; */
+  background: linear-gradient(to right,#3e9fe0, rgba(255, 0, 0, 0));
+  width: 150px;
+  margin: 1rem;
+  padding: 3px;
+  padding-left: 6px;
+  margin-top: 5px;
+  border-radius: 20px;
+  text-align: left;
+  min-height: 15px;
+}
+
+.my-num.next {
+  margin-bottom: -10px;
+  margin-top: -44px;
+  margin-left: 70px;
 }
 
 .button, .input, .textarea, .select select, .file-cta,
@@ -4732,7 +4781,7 @@ fieldset[disabled] .select select:hover {
 
 .card {
   background-color: white;
-  border-radius: 0.25rem;
+  border-radius: 20px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   color: #4a4a4a;
   max-width: 100%;

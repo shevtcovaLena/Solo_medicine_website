@@ -5,7 +5,7 @@ module.exports = function Register() {
     <>
       <script defer src="/js/reg.js" />
       <div className="form-container">
-        <form id="register-form">
+        <form id="register-form" class="box">
           <div className="field">
             <label className="label">Имя</label>
             <div className="control">
@@ -89,7 +89,7 @@ module.exports = function Register() {
             </div> */}
           </div>
         </form>
-        <h3 className="reg-msg"></h3>
+        <h3 className="msg"></h3>
       </div>
     </>
   );

@@ -20,6 +20,7 @@ const app = express();
 
 const indexRoutes = require('./src/routes/indexRoutes');
 const userRoutes = require('./src/routes/userRout');
+const serviceRoutes = require('./src/routes/serviceRoutes');
 // const appointRoutes = require('./src/routes/appointRoutes');
 
 
@@ -44,6 +45,7 @@ app.use(express.static(path.join(process.cwd(), 'public')));
 app.use(session(sessionConfig));
 
 app.use('/user', userRoutes);
+app.use('/service', serviceRoutes);
 // app.use('/appoint', appointRoutes);
 app.use('/', indexRoutes);
 

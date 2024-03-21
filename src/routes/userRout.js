@@ -16,11 +16,9 @@ router.post('/', async (req, res) => {
       res.json({ err: 'Такой пользователь уже существует!' });
     } else {
       const hash = await bcrypt.hash(password, 10);
-      console.log('hash:', hash);
       const newUser = await User.create({ name, email, password: hash, admin });
       req.session.admin = newUser.admin;
       req.session.name = newUser.name;
-      console.log(req.session);
       req.session.save(() => {
         res.json({ msg: 'Пользователь зарегистрирован!' });
       });
@@ -29,5 +27,32 @@ router.post('/', async (req, res) => {
     res.send(`Error ------> ${error}`);
   }
 });
+
+
+router.post('/login', async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const user = await User.findOne({ where: { email } });
+    if (!user) {
+      res.json({ err: 'Такой пользователь не найден!' });
+    } else {
+      const checkPass = await bcrypt.compare(password, user.password);
+      if (!checkPass) {
+        res.json({ err: 'Неверный пароль!' });
+      } else {
+        req.session.admin = user.admin;
+        req.session.name = user.name;
+        req.session.save(() => {
+          res.json({ msg: 'Вы успешно авторизованы!' });
+        });
+      }
+    }
+  } catch (error) {
+    console.log(error);
+    res.json({ err: 'Ошибка при авторизации!' });
+  }
+});
+
+module.exports = router;
 
 module.exports = router;

@@ -32,7 +32,7 @@ module.exports = function Layout({ children, name }) {
                 Главная
               </a>
 
-              <a className="navbar-item">
+              <a className="navbar-item" href="/service">
                 Услуги
               </a>
 

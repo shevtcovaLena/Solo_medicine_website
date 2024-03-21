@@ -1,5 +1,5 @@
 // const registerForm = document.querySelector('#register-form');
-const msg = document.querySelector('.reg-msg');
+const msg = registerForm.nextSibling;
 
 registerForm.addEventListener('submit', async (ev) => {
   ev.preventDefault();
