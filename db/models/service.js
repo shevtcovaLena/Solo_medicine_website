@@ -5,6 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Service extends Model {
     static associate(models) {
+      this.hasMany(models.Doctor, { foreignKey: 'service_id' })
     }
   }
   Service.init({

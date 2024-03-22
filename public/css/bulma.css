@@ -7,6 +7,11 @@ body {
   /* min-height: 100rem;  */
 }
 
+a.is-light {
+  color: #00ccd0;
+
+}
+
 .landing-container {
   background-image: url("../img/background2.png");
   /* filter: opacity(0.7) saturate(0.5); */
@@ -72,7 +77,18 @@ body {
 }
 
 .adress {
-  margin-top: 8px;
+  margin: 8px ;
+}
+
+.title-appoint {
+  color: whitesmoke;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.my-table {
+  margin:0 auto;
 }
 
 .my-num {
@@ -92,6 +108,23 @@ body {
   margin-top: -44px;
   margin-left: 70px;
 }
+
+.map-box {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map-box div {
+  min-height: 50%;
+}
+
+.margin {
+  min-height: 20px;
+  min-width: 20px;
+}
+
 
 .button, .input, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,

@@ -2,7 +2,7 @@
 // * Если нет, то на логин ИЛИ регистрацию
 
 function secureRout(req, res, next) {
-  if (!req.session.login) {
+  if (!req.session.name) {
     next();
   } else {
     res.redirect('/');
@@ -10,10 +10,10 @@ function secureRout(req, res, next) {
 }
 
 function checkUser(req, res, next) {
-  if (req.session.login) {
+  if (req.session.name) {
     next();
   } else {
-    res.redirect('/login');
+    res.redirect('/');
   }
 }
 

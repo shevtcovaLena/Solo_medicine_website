@@ -19,6 +19,7 @@ router.post('/', async (req, res) => {
       const newUser = await User.create({ name, email, password: hash, admin });
       req.session.admin = newUser.admin;
       req.session.name = newUser.name;
+      req.session.userId = newUser.id;
       req.session.save(() => {
         res.json({ msg: 'Пользователь зарегистрирован!' });
       });
@@ -42,6 +43,7 @@ router.post('/login', async (req, res) => {
       } else {
         req.session.admin = user.admin;
         req.session.name = user.name;
+        req.session.userId = user.id;
         req.session.save(() => {
           res.json({ msg: 'Вы успешно авторизованы!' });
         });

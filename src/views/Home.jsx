@@ -19,19 +19,19 @@ module.exports = function Home({ name }) {
                   ул.Парковая, 84
                 </p>
                 <p className="is-size-5-desktop">
-                  +7 (988) 66-72-000,
+                <a className="is-light" href="tel:+79898262111">+7 (988) 66-72-000,</a>
                 </p>
                 <p className="is-size-5-desktop">
-                  +7 (988) 66-72-111
+                <a className="is-light" href="tel:+79898262111">+7 (988) 66-72-111</a>
                 </p>
                 <p className="adress is-size-4-desktop">
                   ст. Анапская, ул. Мира, 12
                 </p>
                 <p className="is-size-5-desktop">
-                  +7 (989) 766-6-222,
+                <a className="is-light" href="tel:+79898262111">+7 (989) 766-6-222,</a>
                 </p>
                 <p className="is-size-5-desktop">
-                  +7 (989) 766-6-333
+                <a className="is-light" href="tel:+79898262111">+7 (989) 766-6-333</a>
                 </p>
               </div>
               <div className="town">
@@ -45,12 +45,11 @@ module.exports = function Home({ name }) {
                   <a className="is-light" href="tel:+79898262111">+7 (989) 826-21-11,</a>
                 </p>
                 <p className="is-size-5-desktop">
-                  +7 (989) 836-20-00
+                <a className="is-light" href="tel:+79898262111">+7 (989) 836-20-00</a>
                 </p>
               </div>
             </div>
           </div>
-          <div id="round"></div>
         </div>
       </div>
       <Register />

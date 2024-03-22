@@ -10,7 +10,7 @@ module.exports = function Layout({ children, name }) {
         <link rel="stylesheet" href="/css/bulma.css" />
         <script defer src="/js/application.js" />
         {/* <link rel="stylesheet" href="/css/style.css" /> */}
-        <title>Cookie</title>
+        <title>МЦ Сфера</title>
       </head>
       <header className="shadow my-header">
         <nav className="navbar" role="navigation" aria-label="main navigation">
@@ -46,7 +46,7 @@ module.exports = function Layout({ children, name }) {
                 </a>
 
                 <div className="navbar-dropdown">
-                  <a className="navbar-item">
+                  <a className="navbar-item" href="/appoint">
                     Запись
                   </a>
                   <a className="navbar-item">
@@ -56,7 +56,7 @@ module.exports = function Layout({ children, name }) {
                     Отзывы
                   </a>
                   <hr className="navbar-divider" />
-                  <a className="navbar-item">
+                  <a className="navbar-item" href="/contact">
                     Контакты
                   </a>
                 </div>
