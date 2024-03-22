@@ -36,7 +36,7 @@ module.exports = function Layout({ children, name }) {
                 Услуги
               </a>
 
-              <a className="navbar-item">
+              <a className="navbar-item" href="/doctor">
                 Специалисты
               </a>
 
