@@ -15,7 +15,6 @@ table.addEventListener('click', async (ev) => {
         body: JSON.stringify({
           appointID: appointUser.id,
           userID: table.getAttribute('user_id'),
-        //   userName: table.getAttribute('user_name'),
         }),
       });
       const result = await response.json();

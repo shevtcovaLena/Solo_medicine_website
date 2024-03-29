@@ -8,7 +8,6 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   const { name, admin, userId } = req.session;
-  // console.log(name, admin, userId);
   if (admin) {
     const response = await Appoint.findAll({
       include: [{
@@ -48,7 +47,6 @@ router.get('/', async (req, res) => {
 
 router.put('/', async (req, res) => {
   try {
-    // console.log(req.body);
     const { appointID } = req.body;
     const { userID } = req.body;
     const appoint = await Appoint.update({ user_id: userID }, { where: { id: appointID } });

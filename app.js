@@ -11,12 +11,9 @@ const { secureRout, checkUser } = require('./src/middlewares/common');
 
 const path = require('path')
 
-// const dbConnectionCheck = require('../db/dbConnectCheck');
-
 const { PORT } = process.env;
 
 const app = express();
-// dbConnectionCheck();
 
 const indexRoutes = require('./src/routes/indexRoutes');
 const userRoutes = require('./src/routes/userRout');

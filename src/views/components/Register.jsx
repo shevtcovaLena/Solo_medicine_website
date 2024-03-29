@@ -33,33 +33,6 @@ module.exports = function Register() {
               </span>
             </p>
           </div>
-          {/* <div className="field">
-      <label className="label">Subject</label>
-      <div className="control">
-        <div className="select">
-          <select>
-            <option>Выберите роль</option>
-            <option>Пациент</option>
-            <option>Администратор</option>
-            <option>Врач</option>
-          </select>
-        </div>
-      </div>
-    </div> */}
-          {/* <div className="field">
-      <label className="label">Message</label>
-      <div className="control">
-        <textarea className="textarea" placeholder="Textarea"></textarea>
-      </div>
-    </div> */}
-          {/* <div className="field">
-      <div className="control">
-        <label className="checkbox">
-          <input type="checkbox" />
-          Есть ли у вас особое разрешение
-        </label>
-      </div>
-    </div> */}
           <div className="field">
             <div className="control">
               <p>Есть ли у вас особое разрешение? </p>
@@ -84,9 +57,6 @@ module.exports = function Register() {
             <div className="control">
               <button className="button is-primary" type='submit'>Отправить</button>
             </div>
-            {/* <div className="control">
-              <button className="button is-link is-light">В</button>
-            </div> */}
           </div>
         </form>
         <h3 className="msg"></h3>

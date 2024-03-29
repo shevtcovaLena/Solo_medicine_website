@@ -1,4 +1,3 @@
-// const registerForm = document.querySelector('#register-form');
 const msg = registerForm.nextSibling;
 
 registerForm.addEventListener('submit', async (ev) => {

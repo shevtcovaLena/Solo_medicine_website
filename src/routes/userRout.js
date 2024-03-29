@@ -3,9 +3,6 @@ const bcrypt = require('bcrypt');
 
 const router = express.Router();
 
-// const renderTemplate = require('../lib/renderTemplate');
-// const Register = require('../views/components/Register');
-
 const { User } = require('../../db/models');
 
 router.post('/', async (req, res) => {

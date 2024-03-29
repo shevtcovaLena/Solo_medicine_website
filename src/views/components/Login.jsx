@@ -27,24 +27,10 @@ module.exports = function Login() {
               </span>
             </p>
           </div>
-          {/* <div className="field">
-      <div className="control">
-      <p>Есть ли у вас особое разрешение? </p>
-        <label className="radio">
-          <input type="radio" name="question" /> Админ
-        </label>
-        <label className="radio">
-          <input type="radio" name="question" /> Врач
-        </label>
-      </div>
-    </div> */}
           <div className="field is-grouped">
             <div className="control">
               <button className="button is-primary" type="submit">Отправить</button>
             </div>
-            {/* <div className="control">
-      <button className="button is-link is-light">Cancel</button>
-    </div> */}
           </div>
         </form>
         <h3 className="msg"></h3>
