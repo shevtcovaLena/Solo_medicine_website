@@ -15,7 +15,7 @@ module.exports = function Appoints({
       {/* <div className="services columns is-multiline">
           {data?.map((el, index) => <Service key={el.id} title={el.title} text={el.text} num={index} id={el.id} />)}
         </div> */}
-      <h2 className="title-appoint is-size-4-desktop">Доступная запись на 23.03.2024</h2>
+      <h2 className="title-appoint is-size-4-desktop">Доступная запись на 26.03.2024</h2>
       <table className="my-table table is-striped" user_id={userId} user_name={name}>
         <thead>
           <tr>

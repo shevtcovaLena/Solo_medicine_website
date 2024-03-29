@@ -28,6 +28,6 @@ loginForm.addEventListener('submit', async (ev) => {
     }
   } catch (error) {
     console.log('Ошибка авторизации=>', error);
-    alert('Ошибка авторизации!');
+    // alert('Ошибка авторизации!');
   }
 });

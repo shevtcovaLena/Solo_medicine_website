@@ -1,7 +1,7 @@
 const React = require('react');
 
 module.exports = function Doctor({
-  id, name, doctor, proffesion, text, photo,
+  id, name, doctor, profession, text, photo,
 }) {
   return (
     <div className="column is-one-fifth card m-5 cell" id={id}>
@@ -19,7 +19,7 @@ module.exports = function Doctor({
             <p className="title is-4">
               {doctor}
             </p>
-            <p className="subtitle is-6">{proffesion}</p>
+            <p className="subtitle is-6">{profession}</p>
           </div>
         </div>
 
@@ -27,7 +27,6 @@ module.exports = function Doctor({
           {text}
           {' '}
           {name ? (<a href="/appoint"> #Запись</a>) : (<br />)}
-          .
           {' '}
           <br />
         </div>
